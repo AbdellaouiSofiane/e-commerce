@@ -1,0 +1,13 @@
+{% extends "shop/base.html" %}
+
+{% load i18n %}
+
+{% block title %}Payment successful{% endblock %}
+
+{% block content %}
+
+	<h1>{% trans 'Your payment was successful' %}</h1>
+	<p>{% trans 'Your payment has been processed successfully' %}.</p>
+	<p>{% trans 'Download your invoice' %} <a href="{% url 'orders:order_pdf' request.session.order_id %}">{% trans 'here' %}</a></p>
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'shop/base.html' %}
+
+{% load i18n %}
+
+{% block title %}{% trans 'Shop' %}{% endblock title%}
+
+
+
+{% block content %}
+
+
+
+		<div id="category-list">
+			<h1 id="category-title">{% trans 'Categories' %}</h1>
+			
+			<ul>
+				<li class="category-item {% if not category %}selected{% endif %}"> 
+					<a href="{% url 'shop:product_list' %}">
+						{% trans 'All' %}
+					</a>
+				</li>
+				{% for c in categories %}	
+				<li class="category-item {% if category.slug == c.slug %}selected{% endif %}">
+					<a href="{{ c.get_absolute_url }}">
+						{{ c.name }}
+					</a>	
+				</li>
+				{% endfor %}
+			</ul>
+			
+			
+		</div>
+	
+		<div id="product-list">
+			<h1>{% trans 'Products' %}</h1>
+			{% for product in products %}
+			<div class="item">
+
+				<a href="{{ product.get_absolute_url }}">
+					<img class="item-image" src="{{ product.photo.url }}">
+				</a>
+			
+				<a href="{{ product.get_absolute_url }}">
+					<h2 class="item-title">
+						{{ product.name }}
+					</h2>
+				</a>
+				<a href="{{ product.get_absolute_url }}">
+					<h3 class="item-price"> 
+						$ {{ product.price }}
+					</h3>
+				</a>
+			</div>
+			{% empty %}
+				<p>{% trans 'There is currently no product' %}</p>
+			{% endfor %}
+		</div>
+
+		{% with page=products %}
+			{% if page.paginator.num_pages > 1 %}
+			<nav class="pagination">
+			  	{% if page.has_previous %}
+			    	<a href="?page={{ page.previous_page_number }}">
+			    		<span>&laquo;</span>
+			    	</a>
+			    {% endif %}
+			    	<a href="#" class="active">
+			    		{{ page.number }}/{{ page.paginator.num_pages }}
+			    	</a>
+			    {% if page.has_next %}
+			    	<a href="?page={{ page.next_page_number }}">
+			    		<span>&raquo;</span>
+			    	</a>
+			    {% endif %}
+			</nav>
+			{% endif %}
+		{% endwith %}
+
+
+	
+{% endblock content %}

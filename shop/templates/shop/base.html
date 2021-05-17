@@ -1,0 +1,70 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}{% trans 'My Shop' %}{% endblock title %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'shop/css/base.css' %}">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+	<nav id="navbar">
+		<a id="brand" href="{% url 'shop:product_list' %}">
+			{% trans 'My Shop' %}
+		</a>
+		<a href="{% url 'cart:cart_detail' %}">
+			<span id='cart-items'>{{ cart|length }}</span>
+			<span id='cart-icon' class="material-icons">shopping_cart</span>
+
+		</a>
+		{% get_current_language as LANGUAGE_CODE %}
+		{% get_available_languages as LANGUAGES %}
+		{% get_language_info_list for LANGUAGES as languages %}
+			<div class="languages">
+				<p>{% trans "Language" %}:</p>
+				<ul class="languages">
+					{% for language in languages %}
+						<li>
+							<a href="/{{ language.code }}/"{% if language.code == LANGUAGE_CODE %} class="selected"{%endif %}>
+								{{ language.name_local }}
+							</a>
+						</li>
+					{% endfor %}
+				</ul>
+			</div>
+		
+	</nav>
+
+	<div id=content>
+		{% block content %}
+		{% endblock content %}
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2.2.1/src/js.cookie.min.js"></script>
+	<script type="text/javascript">
+	    $(document).ready(function(){  
+	      var csrftoken = Cookies.get('csrftoken');
+	      function csrfSafeMethod(method) {
+	        // these HTTP methods do not require CSRF protection
+	        return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+	      }
+	      $.ajaxSetup({
+	          beforeSend: function(xhr, settings) {
+	            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+	              xhr.setRequestHeader("X-CSRFToken", csrftoken);
+	            }
+	          }
+	      });
+	
+	      {% block domready %}
+	      {% endblock domready %}
+	    });
+  	</script>
+
+	{% block javascript %}
+	{% endblock javascript %}
+
+</body>
+</html>

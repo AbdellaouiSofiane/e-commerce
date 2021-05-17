@@ -1,0 +1,309 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-17 21:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cart/forms.py:9
+msgid "quantity"
+msgstr ""
+
+#: cart/templates/cart/detail.html:7
+msgid "cart detail"
+msgstr ""
+
+#: cart/templates/cart/detail.html:12
+msgid "Your Cart"
+msgstr ""
+
+#: cart/templates/cart/detail.html:15
+msgid "You have currently no product in your cart"
+msgstr ""
+
+#: cart/templates/cart/detail.html:22
+msgid "Image"
+msgstr ""
+
+#: cart/templates/cart/detail.html:23 orders/templates/orders/pdf.html:22
+msgid "Product"
+msgstr ""
+
+#: cart/templates/cart/detail.html:24
+msgid "Unit Price"
+msgstr ""
+
+#: cart/templates/cart/detail.html:25 orders/templates/orders/pdf.html:24
+msgid "Quantity"
+msgstr ""
+
+#: cart/templates/cart/detail.html:26 orders/templates/orders/pdf.html:23
+msgid "Price"
+msgstr ""
+
+#: cart/templates/cart/detail.html:27
+msgid "Remove"
+msgstr ""
+
+#: cart/templates/cart/detail.html:61
+msgid "Subtotal"
+msgstr ""
+
+#: cart/templates/cart/detail.html:66
+msgid "coupon"
+msgstr ""
+
+#: cart/templates/cart/detail.html:67
+msgid "off"
+msgstr ""
+
+#: cart/templates/cart/detail.html:74 orders/templates/orders/create.html:30
+#: orders/templates/orders/pdf.html:38
+msgid "Total"
+msgstr ""
+
+#: cart/templates/cart/detail.html:81 orders/templates/orders/create.html:5
+#: orders/templates/orders/create.html:9
+msgid "Checkout"
+msgstr ""
+
+#: cart/templates/cart/detail.html:84
+msgid "Apply a coupon"
+msgstr ""
+
+#: cart/templates/cart/detail.html:88
+msgid "Apply"
+msgstr ""
+
+#: cart/templates/cart/detail.html:95
+#: shop/templates/shop/product/detail.html:32
+msgid "People who bought this also bought"
+msgstr ""
+
+#: cart/urls.py:10
+msgid "add_to_cart/<int:product_id>/"
+msgstr ""
+
+#: cart/urls.py:13
+msgid "remove_from_cart/<int:product_id>/"
+msgstr ""
+
+#: cart/urls.py:16
+msgid "cart_detail/"
+msgstr ""
+
+#: coupons/urls.py:9
+msgid "apply/"
+msgstr ""
+
+#: orders/models.py:11
+msgid "first_name"
+msgstr ""
+
+#: orders/models.py:12
+msgid "last_name"
+msgstr ""
+
+#: orders/models.py:13
+msgid "email"
+msgstr ""
+
+#: orders/models.py:14
+msgid "city"
+msgstr ""
+
+#: orders/models.py:15
+msgid "address"
+msgstr ""
+
+#: orders/models.py:16
+msgid "postal_code"
+msgstr ""
+
+#: orders/templates/orders/create.html:11
+msgid "Your Order"
+msgstr ""
+
+#: orders/templates/orders/create.html:21
+#, python-format
+msgid ""
+"\n"
+"\t\t\t\t\t\"%(code)s\" (%(discount)s %% off)\n"
+"\t\t\t\t"
+msgstr ""
+
+#: orders/templates/orders/create.html:37
+msgid "checkout"
+msgstr ""
+
+#: orders/templates/orders/pdf.html:4 shop/templates/shop/base.html:6
+#: shop/templates/shop/base.html:15
+msgid "My Shop"
+msgstr ""
+
+#: orders/templates/orders/pdf.html:6
+msgid "Invoice no"
+msgstr ""
+
+#: orders/templates/orders/pdf.html:11
+msgid "Bill to"
+msgstr ""
+
+#: orders/templates/orders/pdf.html:18
+msgid "Items bought"
+msgstr ""
+
+#: orders/templates/orders/pdf.html:25
+msgid "Cost"
+msgstr ""
+
+#: orders/templates/orders/pdf.html:44
+msgid "Paid"
+msgstr ""
+
+#: orders/templates/orders/pdf.html:44
+msgid "Pending payment"
+msgstr ""
+
+#: orders/urls.py:8
+msgid "create/"
+msgstr ""
+
+#: orders/urls.py:9
+msgid "order/<int:order_id>/pdf/"
+msgstr ""
+
+#: payment/templates/payment/canceled.html:7
+msgid "Payment canceled"
+msgstr ""
+
+#: payment/templates/payment/canceled.html:11
+msgid "Your payment has not been processed"
+msgstr ""
+
+#: payment/templates/payment/canceled.html:12
+msgid "There was a problem processing your payment"
+msgstr ""
+
+#: payment/templates/payment/done.html:9
+msgid "Your payment was successful"
+msgstr ""
+
+#: payment/templates/payment/done.html:10
+msgid "Your payment has been processed successfully"
+msgstr ""
+
+#: payment/templates/payment/done.html:11
+msgid "Download your invoice"
+msgstr ""
+
+#: payment/templates/payment/done.html:11
+msgid "here"
+msgstr ""
+
+#: payment/templates/payment/process.html:5
+#: payment/templates/payment/process.html:10
+msgid "Pay by credit card"
+msgstr ""
+
+#: payment/templates/payment/process.html:13
+msgid "Card Number"
+msgstr ""
+
+#: payment/templates/payment/process.html:16
+msgid "CVV"
+msgstr ""
+
+#: payment/templates/payment/process.html:19
+msgid "Expiration Date"
+msgstr ""
+
+#: payment/templates/payment/process.html:24
+msgid "Pay"
+msgstr ""
+
+#: payment/urls.py:9
+msgid "process/"
+msgstr ""
+
+#: payment/urls.py:10
+msgid "done/"
+msgstr ""
+
+#: payment/urls.py:11
+msgid "canceled/"
+msgstr ""
+
+#: shop/templates/shop/base.html:26
+msgid "Language"
+msgstr ""
+
+#: shop/templates/shop/product/detail.html:5
+#: shop/templates/shop/product/list.html:5
+msgid "Shop"
+msgstr ""
+
+#: shop/templates/shop/product/detail.html:26
+msgid "Add To Cart"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:14
+msgid "Categories"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:19
+msgid "All"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:35
+msgid "Products"
+msgstr ""
+
+#: shop/templates/shop/product/list.html:55
+msgid "There is currently no product"
+msgstr ""
+
+#: shop/urls.py:10
+msgid "product/<int:id>/"
+msgstr ""
+
+#: shop_project/settings.py:120
+msgid "English"
+msgstr ""
+
+#: shop_project/settings.py:121
+msgid "Spanish"
+msgstr ""
+
+#: shop_project/urls.py:9
+msgid "admin/"
+msgstr ""
+
+#: shop_project/urls.py:10
+msgid "cart/"
+msgstr ""
+
+#: shop_project/urls.py:11
+msgid "orders/"
+msgstr ""
+
+#: shop_project/urls.py:12
+msgid "payment/"
+msgstr ""
+
+#: shop_project/urls.py:13
+msgid "coupons/"
+msgstr ""

@@ -1,0 +1,328 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-17 21:37+0000\n"
+"PO-Revision-Date: 2021-05-17 21:38+0000\n"
+"Last-Translator: b'  <>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.3\n"
+
+#: cart/forms.py:9
+msgid "quantity"
+msgstr "cantidad"
+
+#: cart/templates/cart/detail.html:7
+msgid "cart detail"
+msgstr "detalle del carrito"
+
+#: cart/templates/cart/detail.html:12
+msgid "Your Cart"
+msgstr "Su carrito"
+
+#: cart/templates/cart/detail.html:15
+msgid "You have currently no product in your cart"
+msgstr "Actualmente no tiene ningún producto en su carrito"
+
+#: cart/templates/cart/detail.html:22
+msgid "Image"
+msgstr "Imagen"
+
+#: cart/templates/cart/detail.html:23 orders/templates/orders/pdf.html:22
+msgid "Product"
+msgstr "Producto"
+
+#: cart/templates/cart/detail.html:24
+msgid "Unit Price"
+msgstr "Precio unitario"
+
+#: cart/templates/cart/detail.html:25 orders/templates/orders/pdf.html:24
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: cart/templates/cart/detail.html:26 orders/templates/orders/pdf.html:23
+msgid "Price"
+msgstr "Precio"
+
+#: cart/templates/cart/detail.html:27
+msgid "Remove"
+msgstr "Eliminar"
+
+#: cart/templates/cart/detail.html:61
+msgid "Subtotal"
+msgstr "Total parcial"
+
+#: cart/templates/cart/detail.html:66
+msgid "coupon"
+msgstr "cupón"
+
+#: cart/templates/cart/detail.html:67
+msgid "off"
+msgstr "apagada"
+
+#: cart/templates/cart/detail.html:74 orders/templates/orders/create.html:30
+#: orders/templates/orders/pdf.html:38
+msgid "Total"
+msgstr "Total "
+
+#: cart/templates/cart/detail.html:81 orders/templates/orders/create.html:5
+#: orders/templates/orders/create.html:9
+msgid "Checkout"
+msgstr "Verificar"
+
+#: cart/templates/cart/detail.html:84
+msgid "Apply a coupon"
+msgstr "Aplicar un cupón"
+
+#: cart/templates/cart/detail.html:88
+msgid "Apply"
+msgstr "Aplicar "
+
+#: cart/templates/cart/detail.html:95
+#: shop/templates/shop/product/detail.html:32
+msgid "People who bought this also bought"
+msgstr "Las personas que compraron esto también compraron"
+
+#: cart/urls.py:10
+msgid "add_to_cart/<int:product_id>/"
+msgstr "Añadir_al_carrito/<int:product_id>/"
+
+#: cart/urls.py:13
+msgid "remove_from_cart/<int:product_id>/"
+msgstr "quitar_del_carrito/<int:product_id>/"
+
+#: cart/urls.py:16
+#, fuzzy
+#| msgid "cart detail"
+msgid "cart_detail/"
+msgstr "detalle del carrito/"
+
+#: coupons/urls.py:9
+#, fuzzy
+#| msgid "Apply"
+msgid "apply/"
+msgstr "Aplicar/"
+
+#: orders/models.py:11
+msgid "first_name"
+msgstr "nombre"
+
+#: orders/models.py:12
+msgid "last_name"
+msgstr "apellidos"
+
+#: orders/models.py:13
+msgid "email"
+msgstr "e-mail"
+
+#: orders/models.py:14
+msgid "city"
+msgstr "ciudad"
+
+#: orders/models.py:15
+msgid "address"
+msgstr "dirección"
+
+#: orders/models.py:16
+msgid "postal_code"
+msgstr "código postal"
+
+#: orders/templates/orders/create.html:11
+msgid "Your Order"
+msgstr "Su pedido"
+
+#: orders/templates/orders/create.html:21
+#, python-format
+msgid ""
+"\n"
+"\t\t\t\t\t\"%(code)s\" (%(discount)s %% off)\n"
+"\t\t\t\t"
+msgstr ""
+"\n"
+"\"%(code)s\" (%(discount)s %% apagada)"
+
+#: orders/templates/orders/create.html:37
+#, fuzzy
+#| msgid "Checkout"
+msgid "checkout"
+msgstr "Verificar"
+
+#: orders/templates/orders/pdf.html:4 shop/templates/shop/base.html:6
+#: shop/templates/shop/base.html:15
+msgid "My Shop"
+msgstr "Mi tienda"
+
+#: orders/templates/orders/pdf.html:6
+msgid "Invoice no"
+msgstr "Factura no"
+
+#: orders/templates/orders/pdf.html:11
+msgid "Bill to"
+msgstr "Cobrar a"
+
+#: orders/templates/orders/pdf.html:18
+msgid "Items bought"
+msgstr "Artículos comprados"
+
+#: orders/templates/orders/pdf.html:25
+msgid "Cost"
+msgstr "Costo"
+
+#: orders/templates/orders/pdf.html:44
+msgid "Paid"
+msgstr "Pagada"
+
+#: orders/templates/orders/pdf.html:44
+msgid "Pending payment"
+msgstr "Pago pendiente"
+
+#: orders/urls.py:8
+msgid "create/"
+msgstr "crear/"
+
+#: orders/urls.py:9
+#, fuzzy
+#| msgid "order/<int:order_id>/pdf"
+msgid "order/<int:order_id>/pdf/"
+msgstr "pedido/<int:order_id>/pdf/"
+
+#: payment/templates/payment/canceled.html:7
+msgid "Payment canceled"
+msgstr "Pago cancelado"
+
+#: payment/templates/payment/canceled.html:11
+msgid "Your payment has not been processed"
+msgstr "Tu pago no ha sido procesado"
+
+#: payment/templates/payment/canceled.html:12
+msgid "There was a problem processing your payment"
+msgstr "There was a problem processing your payment"
+
+#: payment/templates/payment/done.html:9
+msgid "Your payment was successful"
+msgstr "Tu pago fue exitoso"
+
+#: payment/templates/payment/done.html:10
+msgid "Your payment has been processed successfully"
+msgstr "Su pago se ha procesado correctamente."
+
+#: payment/templates/payment/done.html:11
+msgid "Download your invoice"
+msgstr "Descarga tu factura"
+
+#: payment/templates/payment/done.html:11
+msgid "here"
+msgstr "aquí"
+
+#: payment/templates/payment/process.html:5
+#: payment/templates/payment/process.html:10
+msgid "Pay by credit card"
+msgstr "Pagar con tarjeta de crédito"
+
+#: payment/templates/payment/process.html:13
+msgid "Card Number"
+msgstr "Card Number"
+
+#: payment/templates/payment/process.html:16
+msgid "CVV"
+msgstr "CVV"
+
+#: payment/templates/payment/process.html:19
+msgid "Expiration Date"
+msgstr "Fecha de caducidad"
+
+#: payment/templates/payment/process.html:24
+msgid "Pay"
+msgstr "Pagar"
+
+#: payment/urls.py:9
+msgid "process/"
+msgstr "proceso/"
+
+#: payment/urls.py:10
+msgid "done/"
+msgstr "hecho/"
+
+#: payment/urls.py:11
+#, fuzzy
+#| msgid "Payment canceled"
+msgid "canceled/"
+msgstr "cancelado/"
+
+#: shop/templates/shop/base.html:26
+msgid "Language"
+msgstr "Idioma"
+
+#: shop/templates/shop/product/detail.html:5
+#: shop/templates/shop/product/list.html:5
+msgid "Shop"
+msgstr "Tienda"
+
+#: shop/templates/shop/product/detail.html:26
+msgid "Add To Cart"
+msgstr "Añadir al carrito"
+
+#: shop/templates/shop/product/list.html:14
+msgid "Categories"
+msgstr "Categorias"
+
+#: shop/templates/shop/product/list.html:19
+msgid "All"
+msgstr "Todas"
+
+#: shop/templates/shop/product/list.html:35
+msgid "Products"
+msgstr "Productos"
+
+#: shop/templates/shop/product/list.html:55
+msgid "There is currently no product"
+msgstr "Actualmente no hay ningún producto"
+
+#: shop/urls.py:10
+#, fuzzy
+#| msgid "product/<int:id>"
+msgid "product/<int:id>/"
+msgstr "producto/<int:id>/"
+
+#: shop_project/settings.py:120
+msgid "English"
+msgstr "Inglés"
+
+#: shop_project/settings.py:121
+msgid "Spanish"
+msgstr "Español"
+
+#: shop_project/urls.py:9
+msgid "admin/"
+msgstr "administración/"
+
+#: shop_project/urls.py:10
+msgid "cart/"
+msgstr "carro/"
+
+#: shop_project/urls.py:11
+msgid "orders/"
+msgstr "pedidos/"
+
+#: shop_project/urls.py:12
+#, fuzzy
+#| msgid "Pending payment"
+msgid "payment/"
+msgstr "pago/"
+
+#: shop_project/urls.py:13
+#, fuzzy
+#| msgid "coupon"
+msgid "coupons/"
+msgstr "cupones/"

@@ -1,0 +1,44 @@
+{% extends 'shop/base.html' %}
+
+{% load i18n %}
+
+{% block title %} {% trans "Checkout" %} {% endblock %}
+
+
+{% block content %}
+<h1>{% trans "Checkout" %}</h1>
+<div id='order-info'>
+	<h3>{% trans "Your Order" %}</h3>
+	<ul>
+		{% for item in cart %}
+			<li>
+				{{ item.quantity }} x {{ item.product.name }}
+				<span>${{ item.total_price }}</span>
+			</li>
+		{% endfor %}
+		{% if cart.coupon %}
+			<li>
+				{% blocktrans with code=cart.coupon.code discount=cart.coupon.discount %}
+					"{{ code }}" ({{ discount }} % off)
+				{% endblocktrans %}
+				<span class="neg">
+					- ${{ cart.get_discount|floatformat:2 }}
+				</span>
+			</li>
+		{% endif %}
+	</ul>
+	<p>{% trans "Total" %}: ${{ cart.get_total_price_after_discount }}</p>
+</div>
+
+<div>
+	<form method="POST" id='order-form'>
+		{{ form.as_p }}
+		{% csrf_token %}
+		<input class="submit" type="submit" name="{% trans 'checkout'%}">
+	</form>
+</div>
+
+
+	
+	
+{% endblock content %}
