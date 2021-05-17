@@ -32,6 +32,19 @@ Note : This project make use of Redis and Rabbitmq, so make sure you have both s
 
 ## Screenshots
 
+![image](https://user-images.githubusercontent.com/62038668/118564727-1f584c80-b771-11eb-8cad-0a2901be7e03.png)
+
+![image](https://user-images.githubusercontent.com/62038668/118564784-3c8d1b00-b771-11eb-8009-cbfc3cdbf27c.png)
+
+![image](https://user-images.githubusercontent.com/62038668/118564837-53cc0880-b771-11eb-8a10-169204dc592a.png)
+
+![image](https://user-images.githubusercontent.com/62038668/118564856-61818e00-b771-11eb-8d17-7ed780ecc6d0.png)
+
+![image](https://user-images.githubusercontent.com/62038668/118564891-7bbb6c00-b771-11eb-9908-1590dbe27399.png)
+
+![image](https://user-images.githubusercontent.com/62038668/118564937-91309600-b771-11eb-9418-7136abf93464.png)
+
+
 ## Features
 
 * Create/Edit shopping cart using django session.
