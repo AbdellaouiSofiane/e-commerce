@@ -1,4 +1,4 @@
-# personal blog web site
+# E-commerce web site
 > This is a e-commerce web site developped using Python Django.
 
 ## Requirements
